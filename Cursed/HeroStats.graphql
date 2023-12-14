@@ -1,0 +1,20 @@
+query GetHeroStats {
+    heroStats{
+        heroVsHeroMatchup(heroId: 73) {
+            advantage {
+                vs{
+                    heroId1
+                    heroId2
+                    winsAverage
+                }
+            }
+            disadvantage {
+                vs{
+                    heroId1
+                    heroId2
+                    winsAverage
+                }
+            }
+        }
+    }
+}
